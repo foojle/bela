@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/css/all.css">
+    <style>
+    *{
+    		margin:0px;
+    		padding:0px;		
+    				}
+    body{
+    			background:white;
+    				}
+    	.sidebar{
+		position:fixed;
+		left:-250px;
+		height:100%;
+		width:246px;
+		background:#042331;
+		transition: all .5s ease; 
+}
+.sidebar header{
+		font-size:22px;
+		text-align:center;
+		color:white;
+		line-height:70px;
+		background:#063146;
+		text-align:center;
+}
+.sidebar ul a{
+		font-size:20px;
+		line-height:55px;
+		height:100%;
+		width:100%;
+		
+		color:white;
+		padding-left:30px;
+		box-sizing:border-box;
+		border-top:1px solid rgba(255,255,255,.1);
+		border-bottom:1px solid black;
+		display:block;
+		transition:.3s;
+}
+ul li:hover a{
+		padding-left:40px;
+}
+#check{
+		display:none;
+}
+label #btn,label #cancel{
+		position:absolute;
+		
+}
+label #btn{
+		right:8px;
+		top:3px;
+		font-size:39px;
+		color:black;
+		transition: all .2s ease;
+}
+label #cancel{
+		z-index:111;
+		left:-195px;
+		top:17px;
+		font-size:30px;
+		color:white;
+		transition: all  .6s ease;
+}
+#check:checked ~ .sidebar{
+		left:0px;
+}
+#check:checked ~ label #btn{
+		left:190px;
+		opacity:0;
+}
+#check:checked ~ label #cancel{
+		left:195px;
+}
+section{
+		background: url(bg.jpg) no-repeat;
+		background-size:cover;
+		background-position:center;
+		height:100vh;
+}
+			/* Main app */
+    .cls{
+    			text-align: center;	
+    			color:white;
+    			background:grey;
+    			padding: 10px 20px;
+    				}
+    	.main{
+    		
+    					}	
+    	button{
+    			background:grey;
+    			color:white;
+    			line-height:55px;
+    			height:55px;
+    	   width:300px;
+    	   display:block;
+    	   text-align: left;
+    	   font-size:17px;
+    	   margin:4px;
+    	   margin-left:9%;
+    	   outline:none;
+    	   border-radius: 5px;
+    	   border:none;
+    	   padding-left: 62px;
+    					}				
+    					
+    		a{
+    			text-decoration:none;	
+    			color:white;
+    									
+    		}		
+    </style>
+</head>
+<body>
+		<input type="checkbox" id="check">
+		<label for="check">
+			<p id="cancel"><</p>
+		</label>
+		<div class="sidebar">
+				<header>Help Line</header>
+				<ul>
+						<li><a href="#"><i class="fas fa-qrcode"></i>Events</a></li>
+						<li><a href="#"><i class="fas fa-link"></i>Dashboard</a></li>
+						<li><a href="#"><i class="fas fa-stream"></i>About Us</a></li>
+						<li><a href="#"><i class="fas fa-qrcode"></i>Contact Us</a></li>
+						<li><a href="#"><i class="fas fa-qrcode"></i>Saty with</a></li>
+						<li><a href="#"><i class="fas fa-qrcode"></i>Stay connected</a></li>
+						<li><a href="#"><i class="fas fa-qrcode"></i>More</a></li>
+				</ul>
+		</div>
+		<section>
+     <div class="cls">
+      <h3>Welcome To Help Line</h3>
+    </div>
+    <br>
+    <main>
+    <div class="main">
+    <button><a href="chapter1.html">Chapter-1 Basic Concept</a></button>
+    <button>Chapter-2 Operator     </button>
+    <button>Chapter-3 Input Output </button>
+    <button>Chapter-4 C   Statement</button>
+    <button>Chapter-5 Funtion      </button>
+    <button>Chapter-6 Array        </button>
+    <button>Chapter-7 Pointer      </button>
+    <button>Chapter-8 Structure    </button>
+    <button>Chapter-9 File Operator</button>
+    <a href="chapter1.html">
+    <button>Chapter-10 Strings     </button>
+    </a>
+    </div>
+    </main>
+    <div class="top">
+    				<label for="check"><a class="top" id="btn">*</a> 	</label>			
+    </div>
+    </section>
+</body>
+</html>
